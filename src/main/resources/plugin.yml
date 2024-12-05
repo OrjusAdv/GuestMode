@@ -1,0 +1,20 @@
+name: GuestMode
+version: '1.1.0'
+api-version: '1.21'
+author: 'Dayle Sacoto'
+main: ru.orjus.guestmode.GuestMode
+depend:
+  - LuckPerms
+
+commands:
+  guestmode:
+    description: Manage the GuestMode plugin.
+    usage: /guestmode <info|reload|remove|whitelist> (add|remove) [player]
+    permission: guestmode.admin
+permissions:
+  guestmode.admin:
+    description: Allows to use the /guestmode <info|reload|remove|whitelist> (add|remove) Command
+    default: op
+  guestmode.active:
+    description: Added for player in fist join to the server
+    default: true

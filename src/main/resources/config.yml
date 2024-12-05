@@ -1,0 +1,114 @@
+# ==================================================
+# Конфигурация плагина GuestMode
+#
+# Этот файл содержит основные настройки плагина.
+#
+# Параметры:
+# - locale: Указывает текущую локаль. Файлы локалей должны находиться в папке locales/.
+# - AllowedCommands: Список команд, которые гости могут использовать.
+# - guestList: Список UUID игроков, которые в данный момент находятся в гостевом режиме.
+# - guestWhitelist: Список UUID игроков, которые исключены из гостевого режима.
+# - physicalInteractionBlocks: Список блоков, которые запрещено активировать физически
+#   (например, нажимные плиты, трипвары и т. д.).
+# - interactiveBlocks: Список блоков, с которыми запрещено взаимодействовать
+#   (например, сундуки, печи, верстаки и т. д.).
+#
+# Измените настройки ниже, сохраните файл и перезагрузите плагин командой:
+# /guestmode reload
+# ==================================================
+
+# Укажите локаль для использования (например, ru_RU, en_US)
+locale: ru_RU
+
+# Команды, которые гости могут использовать
+allowedCommands:
+  - "/register"
+  - "/login"
+
+# Блоки, которые нельзя активировать физически
+physicalInteractionBlocks:
+  - STONE_PRESSURE_PLATE
+  - LIGHT_WEIGHTED_PRESSURE_PLATE
+  - HEAVY_WEIGHTED_PRESSURE_PLATE
+  - POLISHED_BLACKSTONE_PRESSURE_PLATE
+  - OAK_PRESSURE_PLATE
+  - SPRUCE_PRESSURE_PLATE
+  - BIRCH_PRESSURE_PLATE
+  - JUNGLE_PRESSURE_PLATE
+  - ACACIA_PRESSURE_PLATE
+  - DARK_OAK_PRESSURE_PLATE
+  - CRIMSON_PRESSURE_PLATE
+  - WARPED_PRESSURE_PLATE
+  - MANGROVE_PRESSURE_PLATE
+  - CHERRY_PRESSURE_PLATE
+  - BAMBOO_PRESSURE_PLATE
+  - TRIPWIRE
+  - TRIPWIRE_HOOK
+  - TARGET
+  - DAYLIGHT_DETECTOR
+  - SCULK_SENSOR # Нет поддержки, временно!
+  - STRING
+
+# Блоки, с которыми нельзя взаимодействовать
+interactiveBlocks:
+  - CHEST
+  - TRAPPED_CHEST
+  - BARREL
+  - FURNACE
+  - BLAST_FURNACE
+  - SMOKER
+  - CRAFTING_TABLE
+  - ANVIL
+  - CHIPPED_ANVIL
+  - DAMAGED_ANVIL
+  - ENCHANTING_TABLE
+  - LECTERN
+  - STONECUTTER
+  - GRINDSTONE
+  - CARTOGRAPHY_TABLE
+  - SMITHING_TABLE
+  - LOOM
+  - BEACON
+  - BREWING_STAND
+  - HOPPER
+  - DROPPER
+  - DISPENSER
+  - NOTE_BLOCK
+  - JUKEBOX
+  - OAK_SIGN
+  - SPRUCE_SIGN
+  - BIRCH_SIGN
+  - ACACIA_SIGN
+  - DARK_OAK_SIGN
+  - JUNGLE_SIGN
+  - CRIMSON_SIGN
+  - WARPED_SIGN
+  - OAK_FENCE_GATE
+  - SPRUCE_FENCE_GATE
+  - BIRCH_FENCE_GATE
+  - ACACIA_FENCE_GATE
+  - DARK_OAK_FENCE_GATE
+  - JUNGLE_FENCE_GATE
+  - CRIMSON_FENCE_GATE
+  - WARPED_FENCE_GATE
+  - LEVER
+  - STONE_BUTTON
+  - OAK_BUTTON
+  - SPRUCE_BUTTON
+  - BIRCH_BUTTON
+  - JUNGLE_BUTTON
+  - ACACIA_BUTTON
+  - DARK_OAK_BUTTON
+  - CRIMSON_BUTTON
+  - WARPED_BUTTON
+  - COMPARATOR
+  - REPEATER
+
+# Список UUID игроков, которые в данный момент находятся в гостевом режиме.
+# Оставьте пустым, если не хотите добавлять игроков вручную.
+# UUID каждого игрока должен быть уникальным.
+guestList: []
+# Список UUID игроков, которые исключены из гостевого режима.
+# Эти игроки никогда не попадут в гостевой режим, даже при первом входе.
+# UUID каждого игрока должен быть уникальным.
+guestWhitelist: []

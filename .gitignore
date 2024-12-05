@@ -1,0 +1,20 @@
+# Maven target folder
+/target/
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Personal Maven settings
+.mvn/

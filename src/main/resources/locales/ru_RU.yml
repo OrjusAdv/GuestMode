@@ -1,0 +1,71 @@
+# ==================================================
+# Локализация: Русский (ru_RU)
+# Файл локализации для плагина GuestMode.
+# 
+# Здесь содержатся все сообщения, отправляемые игрокам,
+# администраторам и другим участникам сервера.
+#
+# Поддерживаемые плейсхолдеры:
+# - {0}, {1}, {2}, ...: Позиционные аргументы, заменяются
+#   на переданные значения в порядке их передачи.
+# - {player}: Имя игрока.
+# - {uuid}: Уникальный идентификатор игрока.
+#
+# Форматирование:
+# Данный файл поддерживает форматирование MiniMessage.
+# Вы можете использовать:
+# - <red>, <green>, <yellow>: Цвета текста.
+# - <bold>, <italic>, <underlined>: Стили текста.
+# - <click:run_command:'/команда'>: Создание кликабельных ссылок.
+# - <hover:show_text:'Подсказка'>: Всплывающие подсказки.
+#
+# Использование:
+# Чтобы изменить сообщения, отредактируйте текст ниже.
+# Не забудьте сохранить файл и перезагрузить командой /guestmode reload.
+#
+# Дополнительная информация о MiniMessage:
+# https://docs.adventure.kyori.net/minimessage.html
+# ==================================================
+
+messages:
+  # Команды
+  command.usage: "<red>Использование: /guestmode <info|reload|remove|whitelist> [игрок]</red>"
+  command.unknown: "<red>Неизвестная команда. Используйте /guestmode <info|reload|remove|whitelist></red>"
+
+  # Информация о плагине
+  info.header: "<green>Информация о плагине GuestMode:</green>"
+  info.guest_count: "<yellow>Текущее количество гостей: {0}</yellow>"
+
+  # Перезагрузка плагина
+  reload.config_restored: "<yellow>Файл конфигурации отсутствовал и был восстановлен до стандартного состояния.</yellow>"
+  reload.success: "<green>Конфигурация и локализация успешно перезагружены!</green>"
+
+  # Удаление игрока из гостевого режима
+  remove.usage: "<red>Использование: /guestmode remove <игрок></red>"
+  remove.success: "<green>Игрок {player} удалён из гостевого режима.</green>"
+  remove.not_in_guest: "<yellow>Игрок {player} не был в гостевом режиме.</yellow>"
+
+  # Управление вайтлистом
+  whitelist.usage: "<red>Использование: /guestmode whitelist <add|remove> <игрок></red>"
+  whitelist.add.success: "<green>Игрок {player} был добавлен в guestWhitelist.</green>"
+  whitelist.add.already: "<yellow>Игрок {player} уже находится в guestWhitelist.</yellow>"
+  whitelist.remove.success: "<green>Игрок {player} был удалён из guestWhitelist.</green>"
+  whitelist.remove.not_found: "<yellow>Игрок {player} не найден в guestWhitelist.</yellow>"
+  whitelist.skip_guestmode: "<green>Добро пожаловать на сервер! Вы пропустили этап гостевого режима.</green>"
+
+  # Запрещённые действия в гостевом режиме
+  chat_blocked: "<red>Вы не можете отправлять сообщения в чате в гостевом режиме.</red>"
+  command_blocked: "<red>Вы не можете использовать команды в гостевом режиме.</red>"
+  guest_mode_welcome: "<red>Вы находитесь в гостевом режиме. Зарегистрируйтесь, чтобы получить полный доступ!</red>"
+  block_break_denied: "<red>Вы не можете ломать блоки в гостевом режиме.</red>"
+  block_place_denied: "<red>Вы не можете размещать блоки в гостевом режиме.</red>"
+  block_interact_denied: "<red>Вы не можете взаимодействовать с блоками в гостевом режиме.</red>"
+  entity_interact_denied: "<red>Вы не можете взаимодействовать с сущностями в гостевом режиме.</red>"
+  interact_denied: "<red>Вы не можете взаимодействовать с объектами в гостевом режиме.</red>"
+  attack_denied: "<red>Вы не можете атаковать сущностей в гостевом режиме.</red>"
+  item_pickup_denied: "<red>Вы не можете подбирать предметы в гостевом режиме.</red>"
+  item_drop_denied: "<red>Вы не можете выкидывать предметы в гостевом режиме.</red>"
+
+  # Прочее
+  guest_mode_added: "<yellow>Вы были добавлены в гостевой режим. Пожалуйста, завершите регистрацию!</yellow>"
+  welcome_back: "<green>Добро пожаловать обратно!</green>"
